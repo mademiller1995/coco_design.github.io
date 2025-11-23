@@ -1,117 +1,63 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starbucks - Sales Overview</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-            overflow: hidden;
-        }
-        
-        header {
-            background: linear-gradient(135deg, #00704a 0%, #00a862 100%);
-            color: white;
-            padding: 30px 20px;
-            text-align: center;
-        }
-        
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        
-        header p {
-            font-size: 1.1em;
-            opacity: 0.9;
-        }
-        
-        .dashboard-wrapper {
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .iframe-container {
-            width: 100%;
-            max-width: 1140px;
-            background: #f5f5f5;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        iframe {
-            width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
-        }
-        
-        footer {
-            background: #f5f5f5;
-            color: #666;
-            text-align: center;
-            padding: 20px;
-            border-top: 1px solid #ddd;
-            font-size: 0.9em;
-        }
-        
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.8em;
-            }
+ <!--Hello madafucker-->
+    
+<section>
+    <div class="circle"></div>
+    <header>
+        <a href="#"><img class ="logo" src="img/logo_coco.png" alt="logo de empresa"></a>
+        <ul>
+            <li><a href="#">&#10224; Home</a></li>
+            <li><a href="#">&#8278; Menu</a></li>
+            <li><a href="#">&#8286; Noticias</a></li>
+            <li><a href="#">Cont&#64;ctanos</a></li>
+        </ul>
+        <ul>
+            <li class="contact_us"><a href="#">Búsqueda Empleo &#8595;</a></li>
+        </ul>
+    </header>
+
+
+    <iframe title="Sales Ovierview BS" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=fea107df-cdca-490a-aff8-099db485abff&autoAuth=true&ctid=5895b058-59c4-42c9-b127-708498afb452" frameborder="0" allowFullScreen="true"></iframe>
+    <!--first-->
+    <div class="content">
+        <div class="textBox">
+            <h2>¿Conoces<br> <span>COCO</span> ?</h2>
+            <p>Refrescate en cualquier época del año, con una bebida fría, caliente, templada, con/sin azúcar, hecho a tu medida, para todos los paladares.</p>
+            <p>Todas nuestras bebidas son personalizables, donde encontrarás la mejor calidad de fruta para tu bebida especial, con un toque diferente al resto</p>
             
-            iframe {
-                height: 400px;
-            }
-            
-            .dashboard-wrapper {
-                padding: 10px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>☕ Starbucks</h1>
-            <p>Sales Overview Dashboard</p>
-        </header>
-        
-        <div class="dashboard-wrapper">
-            <div class="iframe-container">
-                <iframe 
-                    title="Sales Overview BS" 
-                    src="https://app.powerbi.com/reportEmbed?reportId=fea107df-cdca-490a-aff8-099db485abff&autoAuth=true&ctid=5895b058-59c4-42c9-b127-708498afb452" 
-                    allowFullScreen="true">
-                </iframe>
-            </div>
+            <a href="#">Ver tendencias</a>
         </div>
-        
-        <footer>
-            <p>&copy; 2025 Starbucks Sales Analytics. All rights reserved.</p>
-        </footer>
+        <!--2nd part-->
+        <div class="imgBox">
+            <img src="img/milktea1.png" alt="img1-matcha" class="starbucks">
+        </div>
+<!--3ra part-->
+        <ul class="thumb">
+            <li><img src="img/milktea1.png" onclick="imgSlider('img/milktea1.png'); ChangeCircleColor('orange')"></li>
+            <li><img src="img/milktea2.png" onclick="imgSlider('img/milktea2.png'); ChangeCircleColor('#DDC030')"></li>
+            <li><img src="img/milktea3.png"  onclick="imgSlider('img/milktea3.png'); ChangeCircleColor('#BF624E')"></li>
+        </ul>
+        <!--redes sociales-->
+        <ul class="sci">
+            <li><a href="#"><img src="img/facebook.png"></a></li>
+            <li><a href="#"><img src="img/instagram.png"></a></li>
+            <li><a href="#"><img src="img/twitter.png"></a></li>
+        </ul>
     </div>
-</body>
-</html>
+</section>
+<!--another section-->
+<section class="shop-center">
+    <div class="desg-tienda">
+        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;¡ESTAMOS EN BARCELONA!</h3>
+        <img src="img/coco-bcn.jpg" alt="">
+    </div>  
+</section>
+<!--jscript-->
+<script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.starbucks').src = anything;
+    }
+    function ChangeCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+    }
+</script>
